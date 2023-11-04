@@ -1,6 +1,11 @@
 * {
     font-family: 'Inter', sans-serif;
     font-family: 'Poppins', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
+
+body {
+    overflow-x:hidden;
+}
 
