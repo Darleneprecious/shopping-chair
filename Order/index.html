@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class=" close px-[40px] md:px-[0]  md:hidden flex justify-between items-center bg-gray-100 h-10">
+        <div class=" hidden md:block">
+
+        </div>
+        <div class="flex text-neutral-700 text-xs md:text-sm font-semibold font-['Inter'] leading-snug items-center">
+            <div>
+                <img src="/img/ticket-percent.png" alt="" class="pr-[12px]">
+            </div>
+            <div ">
+                <p class=" pr-[12px]">30% off storewide — Limited time! </p>
+            </div>
+            <div class=" hidden md:flex items-center">
+                <div class="text-blue-500 font-medium border-b border-blue-500">
+                    <p class="">Shop Now</p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-blue-500 border-b border-blue-50 font-medium ">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+        <div class="md:pr-[24px]">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 0 closeBtn">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+
+        </div>
+    </div>
+    <!-- nav -->
+    <div class="w-[90%] md:w-[80%] mx-auto flex justify-between items-center ">
+        <div class="flex items-center">
+            <div class=" block md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 openBtn">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+
+            </div>
+            <div class="text-xl md:text-2xl font-medium font-['Poppins'] leading-normal">
+                <p>3legant<span class=" text-zinc-500">.</span>
+                </p>
+            </div>
+        </div>
+        <div class="hidden md:block">
+            <ul class="flex text-zinc-500  text-sm font-medium font-['Space Grotesk'] leading-normal">
+                <li><a href="#" class="text-neutral-900 pr-[32px] md:pr-[40px]">Home</a>
+                <li><a href="#" class="pr-[32px] md:pr-[40px]">Shop</a>
+                <li><a href="#" class="pr-[32px] md:pr-[40px]">Products</a>
+                <li><a href="#" class="">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class=" flex">
+            <div class="hidden md:block"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+            </div>
+            <div class="hidden md:block"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+            </div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z" />
+                </svg>
+            </div>
+            <div class="bg-black h-[22px] w-[22px] text-center rounded-full ">
+                <a href="#" class="text-white">2</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- process -->
+    <div class="w-[90%] md:w-[80%] mx-auto  flex flex-col  items-start md:items-center">
+        <div
+            class="flex justify-center items-center text-black text-[30px] md:text-[54px]  font-medium font-['Poppins'] mt-[20px] md:mt-[50px] mb-[10px] md:mb-[40px]  leading-[58px]">
+            <p>Complete</p>
+        </div>
+        <div class="flex justify-start md:justify-center items-start md:items-center">
+            <div
+                class="flex justify-start md:justify-center items-start md:items-center text-green-500 text-xs  md:text-base font-semibold font-['Inter'] leading-relaxed gap-4">
+                <div class=" flex justify-between items-center gap-[220px] hidden md:inline-flex md:gap-4">
+                    <div class="flex justify-between items-center gap-2 pb-2 border-b border-green-500 ">
+                        <div
+                            class="w-[30px] h-[30px] flex justify-center items-center rounded-full bg-green-500 text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                            </svg>
+
+                        </div>
+                        <div>
+                            <p>Shopping cart</p>
+                        </div>
+                    </div>
+                    <div class="flex text-green-500 md:justify-between gap-2 pb-2 items-center border-b border-green-500  ">
+                        <div class="w-[30px] h-[30px] flex justify-center items-center rounded-full bg-green-500 text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                            </svg>
+
+                        </div>
+                        <div class="">
+                            <p>Checkout details</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex text-zinc-800 justify-between gap-2 pb-2 items-center border-b border-black">
+                    <div
+                        class="text-zinc-800 w-[24px] h-[24px] text-center flex justify-center items-center  bg-zinc-800 rounded-full text-white">
+                        <button>3</button>
+                    </div>
+                    <div>
+                        <p>Order complete</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- thank you -->
+    <div class="w-[90%] md:w-[60%]  lg:w-[30%] mr-auto ml-auto pb-[10px] mb-[30px] mt-[10px] md:mt-[30px] bg-white shadow">
+        <div class=" flex flex-col justify-start md:justify-center items-start md:items-center">
+            <div class="text-zinc-500 text-[28px] font-medium font-['Poppins'] leading-[34px]">
+                <p>Thank you! 🎉</p>
+            </div>
+            <div class="w-[60%] md:w-[100%]  text-left md:text-center text-zinc-800   text-[40px]  font-medium mb-[40px]  font-['Poppins'] leading-[44px]">
+                <p>Your order has been received</p>
+            </div>
+        </div>
+
+        <div class="flex justify-center items-center mb-[40px] gap-8 md:gap-16">
+            <div class="relative w-20">
+                <img src="/img/chair2" alt="">
+                <div class="absolute w-[24px] h-[24px] rounded-full bg-black -top-[10px] text-white flex justify-center items-center -right-[10px]"><p>2</p></div>
+            </div>
+            <div class="relative w-20">
+                <img src="/img/chair2" alt="">
+                <div class="absolute w-[24px] h-[24px] rounded-full bg-black -top-[10px] text-white flex justify-center items-center -right-[10px]"><p>2</p></div>
+            </div>
+            <div class="relative w-20">
+                <img src="/img/chair2" alt="">
+                <div class="absolute w-[24px] h-[24px] rounded-full bg-black -top-[10px] text-white flex justify-center items-center -right-[10px]"><p>1</p></div>
+            </div>
+        </div>
+         <!-- order -->
+        <div class="mb-[40px]">
+            <div class="flex flex-col md:flex-row justify-start md:justify-center items-start md:items-center  gap-4 md:gap-16">
+                <div class=" text-zinc-500 text-sm font-semibold font-['Inter'] leading-snug"><p>Order code:</p></div>
+                <div class=" text-neutral-900 text-sm font-semibold  font-['Inter'] leading-snug"><p>#0123_45678</p></div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-start md:justify-center items-start md:items-center mb-[20px] gap-4 md:gap-16">
+                <div class=" text-zinc-500 text-sm font-semibold font-['Inter'] leading-snug"><p>Date:</p></div>
+                <div class=" text-neutral-900 text-sm font-semibold  font-['Inter'] leading-snug"><p>October 19, 2023</p></div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-start md:justify-center items-start md:items-center mb-[20px] gap-4 md:gap-16">
+                <div class=" text-zinc-500 text-sm font-semibold font-['Inter'] leading-snug"><p>Total:</p></div>
+                <div class=" text-neutral-900 text-sm font-semibold  font-['Inter'] leading-snug"><p>$1,345.00</p></div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-start md:justify-center items-start md:items-center mb-[20px] gap-4 md:gap-16">
+                <div class=" text-zinc-500 text-sm font-semibold font-['Inter'] leading-snug"><p>Payment method:</p></div>
+                <div class=" text-neutral-900 text-sm font-semibold  font-['Inter'] leading-snug"><p>Credit Card</p></div>
+            </div>
+        </div>
+
+        <div class="w-[90%] md:w-[40%] flex justify-center items-center lg:w-[40%] mr-auto ml-auto h-12 bg-black rounded-3xl mb-[20px] md:mb-[50px]">
+            <button class="text-white text-base font-mediu font-['Inter'] leading-7">Purchase history</button>
+        </div>
+    </div>
+    <footer class=" bg-black pt-[30px] md:pt-[80px] pb-[32px]">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center w-[95%] md:w-[80%] mx-auto lg:w-[80%] mb-[49px]">
+            <div class="flex flex-col md:flex-row gap-2 justify-between items-center  md:mb-[0]  mb-[20px]">
+                <div>
+                    <p
+                        class="text-center md:mb-[0]   mb-[20px] text-white text-xl md:text-2xl font-medium font-['Poppins'] leading-normal pb-2 md:pr-2 border-b md:border-r border-white">
+                        3legant<span class="text-zinc-500">.
+                        </span></p>
+                </div>
+                <div>
+                    <p class="text-gray-200 text-xs md:text-sm font-normal font-['Inter'] leading-snug">Gift &
+                        Decoration Store
+                    </p>
+                </div>
+            </div>
+            <div class="">
+                <ul class="flex flex-col md:flex-row gap-2 items-center">
+                    <li><a href="#"
+                            class="text-white text-xs md:text-sm font-normal font-['Inter'] leading-snug">Home</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-white  text-xs md:text-sm font-normal font-['Inter'] leading-snug">Shop</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-white  text-xs md:text-sm font-normal font-['Inter'] leading-snug">Product</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-white text-xs md:text-sm font-normal font-['Inter'] leading-snug">Blog</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-white text-xs md:text-sm font-normal font-['Inter'] leading-snug">Contact
+                            Us</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="w-[95%] md:w-[80%] mx-auto lg:w-[80%] h-[1px] bg-gray-200 mb-[16px]"></div>
+        <div class=" w-[95%] md:w-[80%] mx-auto lg:w-[80%]">
+            <div class=" flex flex-col md:flex-row justify-between items-center">
+                <div class=" flex flex-col md:flex-row justify-between gap-2 items-center">
+                    <div
+                        class="text-gray-200 text-xs md:text-sm font-normal font-['Poppins'] order-last md:order-first leading-tight">
+                        <p>Copyright © 2023 3legant. All rights reserved</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-4">
+                        <div
+                            class="text-white text-xs md:text-sm font-semibold mb-[20px] mt-[20px] font-['Poppins'] leading-tight">
+                            <p>Privacy Policy</p>
+                        </div>
+                        <div class="text-white text-xs md:text-sm font-semibold font-['Poppins'] leading-tight">
+                            <p>Terms of Use</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between  gap-2 items-center text-white order-first md:order-last">
+                    <div><ion-icon name="logo-instagram" class="mr-2 w-[24px] h-[24px]"></ion-icon></div>
+                    <div><ion-icon name="logo-facebook" class="mr-2 w-[24px] h-[24px]"></ion-icon></div>
+
+                    <div><ion-icon name="logo-youtube" class="mr-2 w-[24px] h-[24px]"></ion-icon></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</body>
+
+</html>

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class=" close px-[40px] md:px-[0]  md:hidden flex justify-between items-center bg-gray-100 h-10">
+        <div class=" hidden md:block">
+
+        </div>
+        <div class="flex text-neutral-700 text-xs md:text-sm font-semibold font-['Inter'] leading-snug items-center">
+            <div>
+                <img src="/img/ticket-percent.png" alt="" class="pr-[12px]">
+            </div>
+            <div ">
+                    <p class=" pr-[12px]">30% off storewide — Limited time! </p>
+            </div>
+            <div class=" hidden md:flex items-center">
+                <div class="text-blue-500 font-medium border-b border-blue-500">
+                    <p class="">Shop Now</p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-blue-500 border-b border-blue-50 font-medium ">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+        <div class="md:pr-[24px]">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 0 closeBtn">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+
+        </div>
+    </div>
+    <!-- nav -->
+    <div class="w-[90%] md:w-[80%] mx-auto flex justify-between items-center ">
+        <div class="flex items-center">
+            <div class=" block md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 openBtn">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+
+            </div>
+            <div class="text-xl md:text-2xl font-medium font-['Poppins'] leading-normal">
+                <p>3legant<span class=" text-zinc-500">.</span>
+                </p>
+            </div>
+        </div>
+        <div class="hidden md:block">
+            <ul class="flex text-zinc-500  text-sm font-medium font-['Space Grotesk'] leading-normal">
+                <li><a href="#" class="text-neutral-900 pr-[32px] md:pr-[40px]">Home</a>
+                <li><a href="#" class="pr-[32px] md:pr-[40px]">Shop</a>
+                <li><a href="#" class="pr-[32px] md:pr-[40px]">Products</a>
+                <li><a href="#" class="">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class=" flex">
+            <div class="hidden md:block"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+            </div>
+            <div class="hidden md:block"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+            </div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z" />
+                </svg>
+            </div>
+            <div class="bg-black h-[22px] w-[22px] text-center rounded-full ">
+                <a href="#" class="text-white">2</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- process -->
+    <div class="w-[90%] md:w-[80%] mx-auto mb-4  flex flex-col  items-start md:items-center">
+        <div
+            class="flex justify-center items-center text-black text-[30px] md:text-[54px]  font-medium font-['Poppins'] mt-[20px] md:mt-[50px] mb-[10px] md:mb-[40px]  leading-[58px]">
+            <p>Complete</p>
+        </div>
+        <div class="flex justify-start md:justify-center items-start md:items-center">
+            <div
+                class="flex justify-start md:justify-center items-start md:items-center text-green-500 text-xs  md:text-base font-semibold font-['Inter'] leading-relaxed gap-4">
+                <div class=" flex justify-between items-center gap-[220px] hidden md:inline-flex md:gap-4">
+                    <div class="flex justify-between items-center gap-2 pb-2 border-b border-green-500 ">
+                        <div
+                            class="w-[30px] h-[30px] flex justify-center items-center rounded-full bg-green-500 text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                            </svg>
+
+                        </div>
+                        <div>
+                            <p>Shopping cart</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex text-zinc-800 md:justify-between gap-2 pb-2 items-center border-b border-zinc-800  ">
+                        <div
+                            class="text-gray-400 w-[24px] h-[24px] text-center flex justify-center items-center  bg-zinc-800 rounded-full text-white">
+                            <button>2</button>
+                        </div>
+                        <div class="">
+                            <p>Checkout details</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex text-gray-400 justify-between gap-2 pb-2 items-center border-b border-gray-400">
+                    <div
+                        class="text-gray-400 w-[24px] h-[24px] text-center flex justify-center items-center  bg-gray-400 rounded-full text-white">
+                        <button>3</button>
+                    </div>
+                    <div>
+                        <p>Order complete</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="w-[90%] mr-auto ml-auto flex flex-col md:flex-row justify-betwwen items-start gap-8">
+        <div class="w-[100%] md:w-[100%] lg:w-[70%]">
+            <!-- Contact information -->
+            <div class="w-[100%] pt-[5%] pb-[5%] mb-2 md:mb-4 border border-black">
+                <div class="w-[90%] ml-auto mr-auto">
+                    <div>
+                        <p
+                            class="text-neutral-900 text-base md:text-xl font-medium  font-['Poppins'] leading-7 mb-[12px] md:mb-[24px]">
+                            Contact information</p>
+                    </div>
+                    <div class=" flex justify-between gap-2 w-[100%]">
+                        <div class="w-[47%]">
+                            <div>
+                                <label for="first">FIRST NAME</label>
+                            </div>
+                            <div class=" border border-black p-2 rounded-md">
+                                <input type="text" name="first" id="first" placeholder="First nmae">
+                            </div>
+                        </div>
+                        <div class="w-[47%]">
+                            <div>
+                                <label for="last">LAST NAME</label>
+                            </div>
+                            <div class=" border border-black p-2 rounded-md">
+                                <input type="text" name="last" id="last" placeholder="Last nmae">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <div>
+                            <label for="number">PHONE NUMBER</label>
+                        </div>
+                        <div class=" border border-black p-2 rounded-md">
+                            <input type="number" name="number" id="number" placeholder=" Phone number ">
+                        </div>
+                    </div>
+                    <div class="w-[100%]">
+                        <div>
+                            <label for="email">EMAIL ADDRESS</label>
+                        </div>
+                        <div class=" border border-black p-2 rounded-md">
+                            <input type="email" name="email" id="email" placeholder=" Your Email ">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- shipping address -->
+            <div class="w-[100%] pt-[5%] pb-[5%] mb-2 md:mb-4 border border-black">
+                <div class="w-[90%] ml-auto mr-auto">
+                    <div>
+                        <p
+                            class="text-neutral-900 text-base md:text-xl font-medium  font-['Poppins'] leading-7 mb-[12px] md:mb-[24px]">
+                            Shipping Address</p>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label for="street">STREET ADDRESS</label>
+                        </div>
+                        <div class=" border border-black p-2 rounded-md">
+                            <input type="text" name="street" id="street" placeholder=" Street Address ">
+                        </div>
+                    </div>
+
+                    <div class="w-[100%]">
+                        <div>
+                            <label for="country">COUNTRY</label>
+                        </div>
+                        <div class=" border border-black p-2 rounded-md pr-[100px]">
+                            <input list="countries" id="country" name="country" placeholder="Country" ">
+                            <datalist id=" countries">
+                            <option value="United States">
+                            <option value="Canada">
+                            <option value="United Kingdom">
+                            <option value="Australia">
+                            <option value="Germany">
+                            <option value="France">
+                            <option value="Japan">
+                            <option value="Italy">
+                            <option value="Spain">
+                            <option value="China">
+                            <option value="Brazil">
+                            <option value="India">
+                            <option value="South Korea">
+                            <option value="Mexico">
+                            <option value="Russia">
+                            <option value="South Africa">
+                            <option value="Sweden">
+                            <option value="Netherlands">
+                            <option value="New Zealand">
+                            <option value="Switzerland">
+                            <option value="Nigeria">
+                            <option value="Austria">
+                            <option value="Belgium">
+                            <option value="Denmark">
+                            <option value="Norway">
+                            <option value="Greece">
+                            <option value="Portugal">
+                            <option value="Argentina">
+                            <option value="Chile">
+                            <option value="Turkey">
+                            <option value="Egypt">
+                            <option value="Indonesia">
+                            <option value="Singapore">
+                            <option value="Thailand">
+                            <option value="Vietnam">
+                            <option value="Pakistan">
+                            <option value="Bangladesh">
+                            <option value="Kenya">
+                            <option value="Peru">
+                            <option value="Colombia">
+                            <option value="Israel">
+                            <option value="Saudi Arabia">
+                            <option value="United Arab Emirates">
+                            <option value="Qatar">
+                                </datalist>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="w-[100%]">
+                        <div>
+                            <label for="town">TOWN / CITY </label>
+                        </div>
+                        <div class=" border border-black p-2 rounded-md">
+                            <input type=town" name="town" id="town" placeholder="Town / City ">
+                        </div>
+                    </div>
+                    <div class=" flex justify-between gap-2 w-[100%]">
+                        <div class="w-[47%]">
+                            <div>
+                                <label for="state">STATE</label>
+                            </div>
+                            <div class=" border border-black p-2 rounded-md">
+                                <input type="text" name="state" id="state" placeholder="State">
+                            </div>
+                        </div>
+                        <div class="w-[47%]">
+                            <div>
+                                <label for="zip">ZIP CODE</label>
+                            </div>
+                            <div class=" border border-black p-2 rounded-md">
+                                <input type="text" name="zip" id="zip" placeholder="Zip code">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- payment method -->
+            <div class=" w-[100%] pt-[5%] pb-[5%] mb-2 md:mb-4 border border-black">
+                <div class="w-[90%] ml-auto mr-auto">
+                    <div>
+                        <form action="">
+                            <p
+                                class="text-neutral-900 text-base md:text-xl font-medium  font-['Poppins'] leading-7 mb-[12px] md:mb-[24px]">
+                                Payment method</p>
+                            <div class="flex justify-between p-2 rounded-sm  mb-[16px] border border-black bg-gray-100">
+
+                                <div
+                                    class="text-neutral-900 text-sm md:text-base font-normal  font-['Inter']  leading-relaxed ">
+                                    <input type="radio" name="payment" id="free">
+                                    <label for="express">Pay by Card Credit</label>
+                                </div>
+                                <div
+                                    class=" text-neutral-900 text-sm md:text-base  font-normal font-['Inter']  leading-relaxed">
+                                    <p>$0.00</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between p-2 rounded-sm border mb-[16px] border-black ">
+                                <div
+                                    class="text-neutral-900 ttext-sm md:text-base font-normal  font-['Inter']   leading-relaxed ">
+                                    <input type="radio" name="cart-summary" id="express">
+                                    <label for="free">Paypal</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="w-[100%] mt-4 mb-4 h-[1px] bg-gray-400"></div>
+                    <!-- card number -->
+                    <div class="w-[100%]">
+
+                        <div class=" w-[100%]">
+                            <div>
+                                <label for="card">CARD NUMBER</label>
+                            </div>
+                            <div class="p-2 border border-black rounded-md">
+                                <input type="number" name="card" id="card" placeholder="1234 1234 1234">
+                            </div>
+                        </div>
+
+
+                        <div class="flex justify-between items-center w-[100%] gap-2">
+                            <div class="w-[47%]">
+                                <div>
+                                    <label for="card">EXPIRATION DATE</label>
+                                </div>
+                                <div class="p-2 pr-[0] border border-black rounded-md">
+                                    <input type="number" name="card" id="card" placeholder="MM/YY">
+                                </div>
+                            </div>
+                            <div class="w-[47%] ">
+                                <div>
+                                    <label for="card">CVC</label>
+                                </div>
+                                <div class="p-2 pr-[0] border border-black rounded-md">
+                                    <input type="number" name="card" id="card" placeholder="CVC code">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- order Summary -->
+        <div class="w-[100%] md:w-[100%] lg:w-[30%] pt-[5%] mb-4 border border-black">
+            <div class="w-[90%] ml-auto mr-auto ">
+                <div>
+                    <div class="text-neutral-900 text-[28px] mb-2 font-medium font-['Poppins'] leading-[34px]">
+                        <p>Order Summary</p>
+                    </div>
+                    <div>
+
+                        <div class="flex justify-between items-start gap-2 ">
+
+
+                            <div class=" flex justify-between items-center gap-4">
+                                <div><img src="/img/chair2" alt=""></div>
+                                <div>
+                                    <div class="text-neutral-900 text-sm font-semibold font-['Inter']  leading-snug">
+                                        <p>Tray Table</p>
+                                    </div>
+                                    <div class="text-zinc-500  text-xs  font-normal font-['Inter']  leading-tight">
+                                        <p>Color: black</p>
+                                    </div>
+
+                                    <div
+                                        class="flex justify-between items-center p-[0.05rem] rounded-md md:p-2 border border-black text-xs md:text-base font-semibold font-['Inter']  leading-relaxed">
+                                        <div><button><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                                </svg>
+                                            </button></div>
+                                        <p>2</p>
+                                        <div><button><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M12 6v12m6-6H6" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-neutral-900 text-sm font-semibold font-['Inter']  leading-snug">
+                                    <p>$38.00</p>
+                                </div>
+                                <div class="block md:hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="w-[100%] mt-4 mb-4 h-[1px] bg-gray-400"></div>
+                    </div>
+                    <div>
+
+                        <div class="flex justify-between items-start gap-2 ">
+
+
+                            <div class=" flex justify-between items-center gap-4">
+                                <div><img src="/img/chair2" alt=""></div>
+                                <div>
+                                    <div class="text-neutral-900 text-sm font-semibold font-['Inter']  leading-snug">
+                                        <p>Tray Table</p>
+                                    </div>
+                                    <div class="text-zinc-500  text-xs  font-normal font-['Inter']  leading-tight">
+                                        <p>Color: black</p>
+                                    </div>
+
+                                    <div
+                                        class="flex justify-between items-center p-[0.05rem] rounded-md md:p-2 border border-black text-xs md:text-base font-semibold font-['Inter']  leading-relaxed">
+                                        <div><button><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                                </svg>
+                                            </button></div>
+                                        <p>2</p>
+                                        <div><button><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M12 6v12m6-6H6" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-neutral-900 text-sm font-semibold font-['Inter']  leading-snug">
+                                    <p>$38.00</p>
+                                </div>
+                                <div class="block md:hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="w-[100%] mt-4 mb-4 h-[1px] bg-gray-400"></div>
+                    </div>
+
+                    <div>
+
+                        <div class="flex justify-between items-start gap-2 ">
+
+
+                            <div class=" flex justify-between items-center gap-4">
+                                <div><img src="/img/chair2" alt=""></div>
+                                <div>
+                                    <div class="text-neutral-900 text-sm font-semibold font-['Inter']  leading-snug">
+                                        <p>Tray Table</p>
+                                    </div>
+                                    <div class="text-zinc-500  text-xs  font-normal font-['Inter']  leading-tight">
+                                        <p>Color: black</p>
+                                    </div>
+
+                                    <div
+                                        class="flex justify-between items-center p-[0.05rem] rounded-md md:p-2 border border-black text-xs md:text-base font-semibold font-['Inter']  leading-relaxed">
+                                        <div><button><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                                </svg>
+                                            </button></div>
+                                        <p>2</p>
+                                        <div><button><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M12 6v12m6-6H6" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-neutral-900 text-sm font-semibold font-['Inter']  leading-snug">
+                                    <p>$38.00</p>
+                                </div>
+                                <div class="block md:hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="w-[100%] mt-4 mb-4 h-[1px] bg-gray-400"></div>
+                    </div>
+                </div>
+
+                <!-- input -->
+                <div class="w-[100%">
+                    <div class="flex justify-between items-center w-[100%]">
+                        <div clas="w-[70%]">
+                            <input type="text" name="" id="" placeholder="input"
+                                class="pb-2 pt-2 pl-2 border border-black rounded-md w-[100%] ">
+                        </div>
+                        <div class=" w-[30%]">
+                            <button
+                                class="pb-2 pt-2 pl-2 text-white bg-black flex justify-center items-center rounded-md w-[100%]">Apply</button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <div class="flex justify-between items-center mt-4">
+                                <div class="flex justify-between items-center gap-2">
+                                    <div><img src="/img/ticket-percent.png" alt=""></div>
+                                    <div
+                                        class="  text-neutral-900  text-base font-normal font-['Inter'] leading-relaxed">
+                                        <p>JenkateMW
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="  text-emerald-400 text-base font-semibold  font-['Inter'] leading-relaxed">
+                                    <p>-$25.00 [Remove]
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-[100%] mt-4 mb-4 h-[1px] bg-gray-400"></div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center">
+                                <div class=" text-neutral-900  text-base font-normal font-['Inter']  leading-relaxed ">
+                                    <p>Shipping</p>
+                                </div>
+                                <div
+                                    class=" text-neutral-900  text-base  font-semibold font-['Inter'] leading-relaxed ">
+                                    <p>Free</p>
+                                </div>
+                            </div>
+                            <div class="w-[100%] mt-4 mb-4 h-[1px] bg-gray-400"></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-center">
+                                <div class=" text-neutral-900  text-base font-normal font-['Inter']  leading-relaxed ">
+                                    <p>Subtotal</p>
+                                </div>
+                                <div
+                                    class=" text-neutral-900  text-base  font-semibold font-['Inter'] leading-relaxed ">
+                                    <p>$99.00</p>
+                                </div>
+                            </div>
+                            <div class="w-[100%] mt-4 mb-4 h-[1px] bg-gray-400"></div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between items-center">
+                                <div class=" text-neutral-900 text-xl font-medium  font-['Poppins']  leading-7">
+                                    <p>Total</p>
+                                </div>
+                                <div class=" text-neutral-900 text-xl font-medium  font-['Poppins']  leading-7 ">
+                                    <p>$234.00</p>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <footer class=" bg-black pt-[30px] md:pt-[80px] pb-[32px]">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center w-[95%] md:w-[80%] mx-auto lg:w-[80%] mb-[49px]">
+            <div class="flex flex-col md:flex-row gap-2 justify-between items-center  md:mb-[0]  mb-[20px]">
+                <div>
+                    <p
+                        class="text-center md:mb-[0]   mb-[20px] text-white text-xl md:text-2xl font-medium font-['Poppins'] leading-normal pb-2 md:pr-2 border-b md:border-r border-white">
+                        3legant<span class="text-zinc-500">.
+                        </span></p>
+                </div>
+                <div>
+                    <p class="text-gray-200 text-xs md:text-sm font-normal font-['Inter'] leading-snug">Gift &
+                        Decoration Store
+                    </p>
+                </div>
+            </div>
+            <div class="">
+                <ul class="flex flex-col md:flex-row gap-2 items-center">
+                    <li><a href="#"
+                            class="text-white text-xs md:text-sm font-normal font-['Inter'] leading-snug">Home</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-white  text-xs md:text-sm font-normal font-['Inter'] leading-snug">Shop</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-white  text-xs md:text-sm font-normal font-['Inter'] leading-snug">Product</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-white text-xs md:text-sm font-normal font-['Inter'] leading-snug">Blog</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-white text-xs md:text-sm font-normal font-['Inter'] leading-snug">Contact
+                            Us</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="w-[95%] md:w-[80%] mx-auto lg:w-[80%] h-[1px] bg-gray-200 mb-[16px]"></div>
+        <div class=" w-[95%] md:w-[80%] mx-auto lg:w-[80%]">
+            <div class=" flex flex-col md:flex-row justify-between items-center">
+                <div class=" flex flex-col md:flex-row justify-between gap-2 items-center">
+                    <div
+                        class="text-gray-200 text-xs md:text-sm font-normal font-['Poppins'] order-last md:order-first leading-tight">
+                        <p>Copyright © 2023 3legant. All rights reserved</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-4">
+                        <div
+                            class="text-white text-xs md:text-sm font-semibold mb-[20px] mt-[20px] font-['Poppins'] leading-tight">
+                            <p>Privacy Policy</p>
+                        </div>
+                        <div class="text-white text-xs md:text-sm font-semibold font-['Poppins'] leading-tight">
+                            <p>Terms of Use</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between  gap-2 items-center text-white order-first md:order-last">
+                    <div><ion-icon name="logo-instagram" class="mr-2 w-[24px] h-[24px]"></ion-icon></div>
+                    <div><ion-icon name="logo-facebook" class="mr-2 w-[24px] h-[24px]"></ion-icon></div>
+
+                    <div><ion-icon name="logo-youtube" class="mr-2 w-[24px] h-[24px]"></ion-icon></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
